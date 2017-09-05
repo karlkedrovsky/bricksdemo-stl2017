@@ -1,0 +1,33 @@
+<div class="layout-container">
+
+  <header class="grid-container" role="banner">
+    {{ page.header }}
+  </header>
+
+  <div class="grid-container">
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
+    
+    {{ page.breadcrumb }}
+
+    {{ page.highlighted }}
+    
+    {{ page.help }}
+  </div>
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="grid-container layout-content">
+      {{ page.content }}
+    </div>
+
+  </main>
+
+  {% if page.footer %}
+    <footer class="grid-container" role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>

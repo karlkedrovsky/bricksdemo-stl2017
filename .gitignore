@@ -1,0 +1,15 @@
+# Ignore binaries.
+/bin
+
+.idea/
+docker-compose.yml
+docroot/sites/*/settings.local.php
+docroot/sites/*/services.local.php
+docroot/sites/*/files
+docroot/vendor
+docroot/core
+docroot/modules/contrib/*
+docroot/themes/contrib/*
+docroot/profiles/contrib/*
+docroot/libraries/*
+docroot/**/node_modules

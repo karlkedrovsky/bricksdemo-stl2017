@@ -1,0 +1,7 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      node_modules/foundation-sites/dist/css/foundation.min.css: {}
+  js:
+    node_modules/foundation-sites/dist/js/foundation.min.js: {}

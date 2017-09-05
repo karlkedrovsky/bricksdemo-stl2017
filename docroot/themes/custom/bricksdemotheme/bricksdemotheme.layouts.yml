@@ -1,0 +1,58 @@
+two_column_grid:
+  label: 'Two column grid'
+  category: 'Bricks Demo Layouts'
+  template: templates/layouts/two-column-grid
+  regions:
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
+    col3:
+      label: Column 3
+    col4:
+      label: Column 4
+    col5:
+      label: Column 5
+    col6:
+      label: Column 6
+    col7:
+      label: Column 7
+    col8:
+      label: Column 8
+    col9:
+      label: Column 9
+    col10:
+      label: Column 10
+    col11:
+      label: Column 11
+    col12:
+      label: Column 12
+four_column_grid:
+  label: 'Four column grid'
+  category: 'Bricks Demo Layouts'
+  template: templates/layouts/Four-column-grid
+  regions:
+    col1:
+      label: Column 1
+    col2:
+      label: Column 2
+    col3:
+      label: Column 3
+    col4:
+      label: Column 4
+    col5:
+      label: Column 5
+    col6:
+      label: Column 6
+    col7:
+      label: Column 7
+    col8:
+      label: Column 8
+    col9:
+      label: Column 9
+    col10:
+      label: Column 10
+    col11:
+      label: Column 11
+    col12:
+      label: Column 12
