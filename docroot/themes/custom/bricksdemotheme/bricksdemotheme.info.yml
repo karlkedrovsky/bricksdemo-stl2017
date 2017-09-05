@@ -3,7 +3,7 @@ type: theme
 description: 'Bricks demo theme.'
 core: 8.x
 libraries:
-  - meetup/global-styling
+  - bricksdemotheme/global-styling
 base theme: stark
 regions:
   header: Header
