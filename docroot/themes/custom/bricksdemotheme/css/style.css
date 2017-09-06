@@ -1,0 +1,7 @@
+a, textarea, input, button {
+  outline: none;
+}
+
+#block-bricksdemotheme-branding img {
+  height: 5rem;
+}

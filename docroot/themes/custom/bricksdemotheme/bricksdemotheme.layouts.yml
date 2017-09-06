@@ -30,7 +30,7 @@ two_column_grid:
 four_column_grid:
   label: 'Four column grid'
   category: 'Bricks Demo Layouts'
-  template: templates/layouts/Four-column-grid
+  template: templates/layouts/four-column-grid
   regions:
     col1:
       label: Column 1
@@ -56,3 +56,37 @@ four_column_grid:
       label: Column 11
     col12:
       label: Column 12
+Tabs:
+  label: 'Tabs'
+  category: 'Bricks Demo Layouts'
+  template: templates/layouts/tabs
+  regions:
+    tab1:
+      label: Tab 1
+    tab2:
+      label: Tab 2
+    tab3:
+      label: Tab 3
+    tab4:
+      label: Tab 4
+    tab5:
+      label: Tab 5
+    tab6:
+      label: Tab 6
+Accordion:
+  label: 'Accordion'
+  category: 'Bricks Demo Layouts'
+  template: templates/layouts/accordion
+  regions:
+    panel1:
+      label: Panel 1
+    panel2:
+      label: Panel 2
+    panel3:
+      label: Panel 3
+    panel4:
+      label: Panel 4
+    panel5:
+      label: Panel 5
+    panel6:
+      label: Panel 6

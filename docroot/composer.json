@@ -9,7 +9,7 @@
         "drupal/core": "~8.3.7",
         "drupal/console": "~1.0",
         "drupal/bricks": "^1.6",
-        "drupal/eck": "^1.0@alpha",
+        "drupal/eck": "1.x-dev",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/admin_toolbar": "^1.19",
         "drupal/devel": "^1.0"

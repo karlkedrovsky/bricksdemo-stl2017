@@ -3,5 +3,7 @@ global-styling:
   css:
     theme:
       node_modules/foundation-sites/dist/css/foundation.min.css: {}
+      css/style.css: {}
   js:
     node_modules/foundation-sites/dist/js/foundation.min.js: {}
+    js/script.js: {}

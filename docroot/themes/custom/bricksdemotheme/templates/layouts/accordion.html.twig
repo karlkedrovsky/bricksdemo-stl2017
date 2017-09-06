@@ -1,0 +1,14 @@
+{% if content %}
+  <div {{ attributes }}>
+    <ul class="accordion" data-accordion>
+    {% for region in content['#layout'].regions|keys if content[region] %}
+      <li class="accordion-item{{ loop.first ? ' is-active' : '' }}" data-accordion-item>
+        <a href="#" class="accordion-title">{{ content[region]['#component'].field_label.value }}</a>
+        <div class="accordion-content" data-tab-content>
+          {{ content[region]|without('field_label') }}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+{% endif %}

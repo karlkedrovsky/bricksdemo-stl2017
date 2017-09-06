@@ -1,0 +1,19 @@
+{% if content %}
+  <div {{ attributes }}>
+    <ul class="tabs" data-tabs id="tabs-{{ content.id() }}">
+    {# Getting regions in a module looks like it's diffeent. ??? #}
+    {% for region in content['#layout'].regions|keys if content[region] %}
+      <li class="tabs-title{{ loop.first ? ' is-active' : '' }}">
+        <a href="#tabs-{{ content[region]['#component'].id() }}-{{ region }}">{{ content[region]['#component'].field_label.value }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+    <div class="tabs-content" data-tabs-content="tabs-{{ content.id() }}">
+      {% for region in content['#layout'].regions|keys if content[region] %}
+        <div class="tabs-panel{{ loop.first ? ' is-active' : '' }}" id="tabs-{{ content[region]['#component'].id() }}-{{ region }}">
+          {{ content[region]|without('field_label') }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
