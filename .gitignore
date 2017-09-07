@@ -2,6 +2,7 @@
 /bin
 
 .idea/
+**/.DS_Store
 docker-compose.yml
 docroot/sites/*/settings.local.php
 docroot/sites/*/services.local.php
