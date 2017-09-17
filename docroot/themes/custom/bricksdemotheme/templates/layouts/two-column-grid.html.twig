@@ -1,7 +1,6 @@
 {% if content %}
 
   <div {{ attributes.addClass('grid-x') }}>
-    {# Getting regions in a module looks like it's diffeent. ??? #}
     {% for region in content['#layout'].regions|keys if content[region] %}
       <div class="small-6 cell">
         {{ content[region] }}
