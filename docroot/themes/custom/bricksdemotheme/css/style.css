@@ -5,3 +5,14 @@ a, textarea, input, button {
 #block-bricksdemotheme-branding img {
   height: 5rem;
 }
+
+.component {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer > div {
+  border-top: 1px solid #cacaca;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
