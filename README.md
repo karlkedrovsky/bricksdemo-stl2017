@@ -1,56 +1,18 @@
-# Docksal powered Drupal 8 Installation
+# Demo Site For Bricks Talk At Drupal Camp St Louis 2017
 
-This is a sample vanilla Drupal 8 installation pre-configured for use with Docksal.  
+This is a simple Dupal 8 site used to demo site building using Bricks and ECK. It uses [Docksal](https://docksal.io/) but that isn't required.
 
-Features:
+## Setup
 
-- Vanilla Drupal 8
-- `fin init` example
+If you're using Docksal just run the following commands starting in the root directory.
 
-## Setup instructions
+```
+fin start
+fin exec composer install
+cd docroot/themes/custom/bricksdemotheme
+fin exec yarn install
+```
 
-### Step #1: Docksal environment setup
+## Database and Files Content
 
-**This is a one time setup - skip this if you already have a working Docksal environment.**  
-
-Follow [Docksal environment setup instructions](http://docksal.readthedocs.io/en/master/getting-started/env-setup)
-
-### Step #2: Project setup
-
-1. Clone this repo into your Projects directory
-
-    ```
-    git clone https://github.com/docksal/drupal8.git
-    cd drupal8
-    ```
-
-2. Initialize the site
-
-    This will initialize local settings and install the site via drush
-
-    ```
-    fin init
-    ```
-
-3. **On Windows** add `192.168.64.100  drupal8.docksal` to your hosts file
-
-4. Point your browser to
-
-    ```
-    http://drupal8.docksal
-    ```
-
-When the automated install is complete the command line output will display the admin username and password.
-
-## More automation with 'fin init'
-
-Site provisioning can be automated using `fin init`, which calls the shell script in [.docksal/commands/init](.docksal/commands/init).  
-This script is meant to be modified per project. The one in this repo will give you a good example of advanced init script.
-
-Some common tasks that can be handled by the init script:
-
-- initialize local settings files for Docker Compose, Drupal, Behat, etc.
-- import DB or perform a site install
-- compile Sass
-- run DB updates, revert features, clear caches, etc.
-- enable/disable modules, update variables values
+The backup directory contains a database dump and and archive of the sites/default/files directory you can use to get a site very similar to (or the same as) the site at the end of the demo.
