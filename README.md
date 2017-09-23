@@ -9,8 +9,6 @@ If you're using Docksal just run the following commands starting in the root dir
 ```
 fin start
 fin exec composer install
-cd docroot/themes/custom/bricksdemotheme
-fin exec yarn install
 ```
 
 ## Database and Files Content
